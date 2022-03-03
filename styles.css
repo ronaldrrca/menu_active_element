@@ -4,3 +4,73 @@
     box-sizing: border-box;
 }
 
+header{
+    width: 100%;
+    display: flex;
+    background-color: #333;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    width: 75%;
+    height: auto;
+    
+}
+
+main{
+    text-align: center;
+    padding-top: 100px;
+}
+
+main a{
+    display: inline-block;
+    padding-top: 50px;
+    color: #333;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+main a:hover{
+    transform: scale(1.03);
+}
+
+#myName{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #FF6600;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+
+#menu li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+#menu li a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+#menu li a:hover{
+    text-decoration: underline;
+    transform: scale(1.03);
+}
+
+h1{
+    color: crimson;
+}
+
