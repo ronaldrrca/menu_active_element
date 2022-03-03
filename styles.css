@@ -12,33 +12,31 @@ header{
 
 nav{
     display: flex;
-    justify-content: flex-end;
-    padding-right: 100px;
-    width: 75%;
+    justify-content: center;
+    /* padding-right: 100px; */
+    width: 100%;
     height: auto;
     
 }
 
 main{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding-top: 100px;
 }
 
 main a{
     display: inline-block;
-    padding-top: 50px;
+    margin-top: 20px;
     color: #333;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
 }
 
-main a:hover{
-    transform: scale(1.03);
-}
-
 #myName{
-    width: 25%;
-    display: flex;
+    display: none;
+    width: 30%;
     justify-content: flex-start;
     align-items: center;
     padding-left: 10px;
@@ -54,7 +52,7 @@ main a:hover{
 
 #menu li{
     list-style: none;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 #menu li a{
@@ -74,3 +72,31 @@ h1{
     color: crimson;
 }
 
+
+@media (min-width: 768px){
+    nav{
+       width: 70%;
+       justify-content: flex-end;
+       padding-right: 20px;
+    }
+
+    #myName{
+        display: flex;
+    }
+
+    header{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1024px){
+    #myName{
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 1300px){
+    nav{
+        padding-right: 50px;
+    }
+}
