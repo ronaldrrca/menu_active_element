@@ -1,23 +1,13 @@
-let url = window.location.href;
-let from = url.lastIndexOf("/") + 1;
-let to = url.indexOf(".html"); 
-let pageName = url.slice(from, to);
+//Identifico la url completa de la página en la que nos encontramos.
+let url = window.location.href; 
+//Identifico el último índice del caracter "/", y le sumo 1 para utilizarlo en el slice.
+let from = url.lastIndexOf("/") + 1; 
+//Identifico el índice a partir de donde encontramos la extensión del archivo.
+let to = url.indexOf(".html");
+//Tomo sólo el nombre del archivo, que se encuentra entre los dos índices establecidos.
+let pageName = url.slice(from, to); 
 
-switch (pageName) {
-    case "index":
-        document.getElementById("item_index").style.color = "#FF6600";
-        break;
-    
-    case "contactame":
-        document.getElementById("item_contactame").style.color = "#FF6600";
-        break;
+//Dependiendo del resultado obtenido, agrego los estilos al item correspondiente.
+document.getElementById(pageName).style.color = "#FF6600";
 
-    case "productos":
-        document.getElementById("item_productos").style.color = "#FF6600";
-        break;
-
-    case "servicios":
-        document.getElementById("item_servicios").style.color = "#FF6600";
-        break;
-}
 

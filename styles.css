@@ -13,10 +13,8 @@ header{
 nav{
     display: flex;
     justify-content: center;
-    /* padding-right: 100px; */
     width: 100%;
     height: auto;
-    
 }
 
 main{
@@ -52,7 +50,6 @@ main a{
 
 #menu li{
     list-style: none;
-    /* margin-left: 20px; */
 }
 
 #menu li a{
@@ -71,7 +68,6 @@ main a{
 h1{
     color: crimson;
 }
-
 
 @media (min-width: 768px){
     nav{
